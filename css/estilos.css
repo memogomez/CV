@@ -1,12 +1,147 @@
-.navbar{
-	margin-bottom: 0;
+*{
+    box-sizing: border-box;
 }
-.jumbotron{
-	background: #ffffff;
-	color: #000000;
-	padding: 0px 0;
+
+html{
+    scroll-behavior: smooth;
 }
-.imagen{
-	height: auto;
-	width: 100%;
+
+body{
+    font-family: 'Oxygen', sans-serif;;
+    font-size: 16px;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 }
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* --- --- HEADER --- --- */
+
+header{
+    background:url('/img/code.jpg') #0F2027;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);  */
+    max-height: 450px;
+}
+
+header .menu{
+    margin: 20px 0;
+    text-align: right;
+}
+
+header .menu a{
+    color: #d0e8f2;
+    padding: 9px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    font-size: 1em;
+    margin-bottom: 5px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    line-height: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+header .menu a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header .contenedor-texto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 55px;
+    margin-bottom: 125px;
+}
+
+header .contenedor-texto .texto{
+    display: inline-block;
+    padding: 20px 60px;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    line-height: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+header .contenedor-texto .texto h1{
+    color: white;
+    margin: 5px 0;
+}
+
+header .contenedor-texto .texto h2{
+    color: whitesmoke;
+    font-weight:lighter;
+    margin: 0;
+}
+
+header .contenedor-texto .texto nombre{
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+header .contenedor-texto .texto .profesion{
+    font-size: 20px;
+    line-break: 25px;
+}
+/* --- --- MAIN --- --- */
+
+.main .contenedor{
+    overflow: visible;
+}
+
+.main .acerca-de{
+    text-align: center;
+}
+
+.main .acerca-de .foto{
+    margin-top: -80px;
+}
+
+.main .acerca-de .foto img{
+    vertical-align: top;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.1)
+}
+
+.main .acerca-de .texto{
+    color: white;
+    font-size: 1.2em;
+    line-height: 30px ;
+    font-weight: 500;
+    width: 80%;
+    margin: 25px auto;
+}
+
+.main .acerca-de .contenedor .texto .titulo{
+    color: #42E2B8;
+    font-size: 34px;
+    font-weight:bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main .trabajos {
+    /*background: rgba(192, 45, 45, 0.1);*/
+    padding: 25px;
+}
+
+.main .trabajos .contenedor{
+    overflow: hidden;
+}
+
+
